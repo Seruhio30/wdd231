@@ -13,10 +13,10 @@ function renderCourses(array) {
 
         card.innerHTML = `
             <h3>${course.subject} ${course.number}: ${course.title}</h3>
-            <p><strong>Credits:</strong> ${course.credits}</p>
             <p><strong>Certificate:</strong> ${course.certificate}</p>
             <p><strong>Description:</strong> ${course.description}</p>
             <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
+            <p>The total credits course listed above is:  ${course.credits}</p>
         `;
         courseList.appendChild(card);
     });

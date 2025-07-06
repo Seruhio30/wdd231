@@ -1,0 +1,52 @@
+@media only screen and (min-width: 800px) {
+
+    :root{
+        --hover:#48cae4;
+    }
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation a:hover {
+        background-color: var(--hover);
+        border-radius: 4px;
+    }
+
+    .grid-layout {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .about {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .photo {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .courses {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+
+    }
+}

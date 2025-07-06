@@ -1,0 +1,9 @@
+//store the selected elements tha we are going to use.
+const navButtom = document.querySelector('#nav-button');
+const navLinks = document.querySelector('#nav-bar');
+//toggle the show class off and on
+navButtom.addEventListener('click', () => {
+     navButtom.classList.toggle('show')
+     navLinks.classList.toggle('show')
+});
+   

@@ -113,7 +113,7 @@ header img {
   border-radius: 8px;
 }
 
-:where(h1) {
+h1 {
   margin-block: 0.67em;
   font-size: 2em;
 }

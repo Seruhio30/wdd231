@@ -1,0 +1,65 @@
+[
+  {
+    "name": "TicoTech Innovations",
+    "address": "123 Avenida Central, Santa Ana",
+    "phone": "+506 2282 3001",
+    "website": "https://ticotech.cr",
+    "image": "ticotech.png",
+    "membershipLevel": 3,
+    "description": "Leading software development firm specializing in sustainable tech solutions."
+  },
+  {
+    "name": "Costa Coffee Traders",
+    "address": "45 Calle del Café, Santa Ana",
+    "phone": "+506 2222 1450",
+    "website": "https://costacoffee.cr",
+    "image": "coffee.png",
+    "membershipLevel": 2,
+    "description": "Exporters of high-quality Costa Rican coffee with direct-to-market services."
+  },
+  {
+    "name": "VerdeVida Eco Market",
+    "address": "88 Ruta Verde, Santa Ana",
+    "phone": "+506 2244 9821",
+    "website": "https://verdevida.cr",
+    "image": "greenmarket.png",
+    "membershipLevel": 1,
+    "description": "Local market promoting organic produce and eco-conscious products."
+  },
+  {
+    "name": "Santa Ana Fitness & Wellness",
+    "address": "12 Boulevard Salud, Santa Ana",
+    "phone": "+506 2290 5310",
+    "website": "https://safitness.cr",
+    "image": "fitness.png",
+    "membershipLevel": 2,
+    "description": "Community gym offering holistic wellness programs and personal coaching."
+  },
+  {
+    "name": "EcoTours Pacific",
+    "address": "100 Ruta Nacional 27, Santa Ana",
+    "phone": "+506 2200 4011",
+    "website": "https://ecotourspacific.cr",
+    "image": "ecotour.png",
+    "membershipLevel": 3,
+    "description": "Gold-rated eco tourism company focused on sustainable adventures and conservation."
+  },
+  {
+    "name": "Santana Print & Design",
+    "address": "73 Calle Creativa, Santa Ana",
+    "phone": "+506 2277 3412",
+    "website": "https://santanaprint.cr",
+    "image": "print.png",
+    "membershipLevel": 1,
+    "description": "Affordable printing, signage, and branding solutions for local businesses."
+  },
+  {
+    "name": "Pura Vida Legal Advisors",
+    "address": "32 Plaza Justicia, Santa Ana",
+    "phone": "+506 2255 6114",
+    "website": "https://puralegal.cr",
+    "image": "legal.png",
+    "membershipLevel": 2,
+    "description": "Trusted legal firm offering bilingual legal services for families and entrepreneurs."
+  }
+]

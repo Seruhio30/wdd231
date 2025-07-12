@@ -1,0 +1,59 @@
+@media (min-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: nowrap;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+    background: none;
+    padding: 0;
+    width: auto;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation li {
+    margin: 0;
+  }
+
+  .navigation a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+    background: none;
+    font-size: 1rem;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 3rem;
+  }
+
+  .info,
+  .social,
+  .info2 {
+    margin-bottom: 0;
+  }
+}

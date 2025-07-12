@@ -14,13 +14,69 @@
                                                 drive sustainable economic development.">
     <meta property="og:image" content="https://seruhio30.github.io/wdd231/chamber/images/logo.png">
     <meta property="og:url" content="https://seruhio30.github.io/wdd231/chamber/directory.html">
-
-
     <title>Santa Ana Chamber Of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 
 <body>
-hola
+    <header>
+        <div class="logo-container">
+            <img class="logo-img" src="images/logo.png" alt="logo of chamber of commerce of santa ana">
+            <h1 class="logo-h1">Santa Ana Chamber Of Commerce</h1>
+        </div>
+        <!-- Botón de menú hamburguesa -->
+        <button id="hamburger" class="hamburger" aria-label="Toggle navigation"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="view-toggle">
+            <button id="gridBtn">Grid View</button>
+            <button id="listBtn">List View</button>
+        </section>
+        <section id="directory" class="grid-view"></section>
+    </main>
+    <footer>
+        <div class="info">
+            <p>Santa Ana Chamber Of Commerce</p>
+            <p>247 Main Street</p>
+            <p>Santa Ana, center</p>
+            <p>tana@ingo.com</p>
+            <p>50622828083</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/SergioHerreraRivera30
+                " target="_blank"><img src="../chamber/images/facebook.svg" alt="FaceBook" width="16" height="16"></a>
+            <a href="https://github.com/Seruhio30
+                " target="_blank"><img src="../chamber/images/github.svg" alt="GitHub" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/sergio-herrera-rivera" target="_blank">
+                <img src="../chamber/images/linkedin.svg" alt="Linked In" width="16" height="16"></a>
+
+        </div>
+        <div info2>
+            <p>WDD 231</p>
+            <p>Sergio Herrera Rivera</p>
+            <p>&copy; <span id="currentyear"></span> Sergio Herrera Rivera, Costa Rica</p>
+            <p id="lastModified">Last Modified:</p>
+        </div>
+
+    </footer>
+
+    <script src="../chamber/scripts/navigation.js" defer></script>
+    <script src="../chamber/scripts/directory.js" defer></script>
 </body>
 
 </html>

@@ -52,7 +52,7 @@ header {
 }
 
 .hamburger.show::before {
-  content: "\00D7"; 
+  content: "\00D7";
 }
 
 .navigation {
@@ -93,6 +93,11 @@ header {
   border-radius: 5px;
 }
 
+.navigation a:hover {
+  background-color: var(--accent-color);
+
+}
+
 #directory.grid-view {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -111,13 +116,28 @@ header {
   padding: 1rem;
   border-radius: 5px;
 }
+
 .member img {
   width: 100px;
   height: auto;
 }
+
 .member a {
-  color: var(--link-color);
+
   text-decoration: underline;
+}
+
+#gridBtn,
+#listBtn{
+  background-color: var(--link-color);
+  margin: 1rem 0.5rem;
+  color: var(--text-color);
+}
+
+#gridBtn:hover,
+#listBtn:hover {
+  background-color: var(--accent-color);
+  color: #1d3557;
 }
 
 

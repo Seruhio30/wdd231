@@ -34,7 +34,7 @@
         <button id="hamburger" class="hamburger" aria-label="Toggle navigation"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
@@ -43,12 +43,43 @@
         </nav>
     </header>
     <main>
-        <h1 class="home">Home</h1>
-        <div class="view-toggle">
-            <button id="gridBtn">Grid View</button>
-            <button id="listBtn">List View</button>
-        </div>
-        <section id="directory" class="grid-view"></section>
+        <section class="main-one">
+            <div class="hero">
+                <img src="images/santa-anao_0.jpg" alt="">
+            </div>
+        </section>
+        <h1 id="home">Home</h1>
+
+        <section class="main-two">
+            <div class="events">
+                <h2>Events</h2>
+
+            </div>
+            <div class="current-Weather">
+                <h2>Current Weather</h2>
+                <img id="weather-icon" src="" alt="image from weather">
+                <div class="weather-details">
+                    <p id="current-temp"></p>
+                    <p id="description"></p>
+                    <p>High: <span id="high-temp"></span></p>
+                    <p>Low: <span id="low-temp"></span></p>
+                    <p>Humidity: <span id="humidity"></span></p>
+                    <p>Sunrise: <span id="sunrise"></span></p>
+                    <p>Sunset: <span id="sunset"></span></p>
+                </div>
+
+            </div>
+            <div class="weather-forecast">
+
+                <h2>Weather Forecast</h2>
+                <p id="today"></p>
+                <p id="day-two"></p>
+                <p id="day-three"></p>
+            </div>
+        </section>
+
+        <section id="spotlights"></section>
+
     </main>
     <footer>
         <div class="info">
@@ -77,8 +108,9 @@
     </footer>
 
     <script src="../chamber/scripts/navigation.js" defer></script>
-    <script src="../chamber/scripts/directory.js" defer></script>
     <script src="../chamber/scripts/date.js" defer></script>
+    <script src="../chamber/scripts/weather.js" defer></script>
+    <script type="module" src="../chamber/scripts/spotlight.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   header {
     display: flex;
     flex-direction: row;
@@ -42,7 +42,51 @@
     background: none;
     font-size: 1rem;
   }
- 
+
+  .view-toggle {
+    padding-left: 3rem;
+  }
+
+  .grid-view {
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .current-Weather {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: 1rem;
+    min-width: 0; 
+  }
+
+  .main-two {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding: 2rem;
+  }
+
+  .weather-details {
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+
+  }
+
+  .weather-details p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem; 
+  }
+
+  #spotlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+    padding: 0 3rem;
+  }
 
   footer {
     flex-direction: row;

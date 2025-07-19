@@ -8,6 +8,8 @@ gridBtn.addEventListener("click", () => {
   container.classList.add("grid-view");
   container.classList.remove("list-view");
 });
+
+
 listBtn.addEventListener("click", () => {
   container.classList.add("list-view");
   container.classList.remove("grid-view");
@@ -18,6 +20,7 @@ async function getMembers() {
     const response = await fetch(url);
     if (!response.ok) throw new Error("Failed to fetch members");
     const data = await response.json();
+    console.log(data);
     displayMembers(data);
   } catch (err) {
     container.innerHTML = `<p>Error: ${err.message}</p>`;

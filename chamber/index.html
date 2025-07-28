@@ -17,26 +17,32 @@
     <title>Santa Ana Chamber Of Commerce</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap">
+    </noscript>
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/large.css" media="print" onload="this.media='all'">
+
 </head>
 
 <body>
     <header>
         <div class="logo-container">
-            <img class="logo-img" src="images/logo.png" alt="logo of chamber of commerce of santa ana">
+            <img class="logo-img" src="images/logo.webp" alt="logo of chamber of commerce of santa ana" width="50" height="50">
             <h2 class="logo-h1">Santa Ana Chamber Of Commerce</h2>
         </div>
         <!-- Botón de menú hamburguesa -->
-        <button id="hamburger" class="hamburger" aria-label="Toggle navigation"></button>
+        <button id="hamburger" class="hamburger" aria-label="Toggle-navigation"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="#">Join</a></li>
+                <li><a href="join.html">Join</a></li>
                 <li><a href="#">Discover</a></li>
 
             </ul>
@@ -45,7 +51,7 @@
     <main>
         <section class="main-one">
             <div class="hero">
-                <img src="images/santa-anao_0.jpg" alt="">
+                <img src="images/santa-anao_0.jpg" alt="santa ana picture" width="500" height="400">
             </div>
         </section>
         <h1 id="home">Home</h1>
@@ -57,7 +63,7 @@
             </div>
             <div class="current-Weather">
                 <h2>Current Weather</h2>
-                <img id="weather-icon" src="" alt="image from weather">
+                <img id="weather-icon" src="" alt="image from weather" width="16" height="16">
                 <div class="weather-details">
                     <p id="current-temp"></p>
                     <p id="description"></p>

@@ -1,4 +1,5 @@
 @media (min-width: 900px) {
+  /**************INDEX HOME PAGE*********************/
   header {
     display: flex;
     flex-direction: row;
@@ -12,7 +13,7 @@
   .hamburger {
     display: none;
   }
-
+  /*******NAVIGATION********/
   .navigation {
     display: block;
     background: none;
@@ -43,14 +44,6 @@
     font-size: 1rem;
   }
 
-  .view-toggle {
-    padding-left: 3rem;
-  }
-
-  .grid-view {
-    padding: 0 3rem;
-    margin-bottom: 2rem;
-  }
 
   .current-Weather {
     display: grid;
@@ -88,6 +81,70 @@
     padding: 0 3rem;
   }
 
+   /******************DIRECTORY PAGE*********************/
+  .member {
+    box-sizing: border-box;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    padding: 1rem;
+    background: var(--background-color);
+  }
+
+  .list-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .card-grid {
+      width: 300px;
+      min-height: 400px;
+  }
+
+  .members-container.grid-view {
+      justify-content: center;
+      gap: 2rem;
+  }
+
+
+
+  .card-grid {
+    width: 300px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /**************MEMBERS CARDS*********************/
+
+
+  .form-layout {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5rem;
+  }
+
+  .contact-form {
+    flex: 2;
+  }
+
+  .card-container {
+    flex: 1;
+  }
+
+
+
+
+ 
+  /**************FOOTER*********************/
   footer {
     flex-direction: row;
     justify-content: space-between;

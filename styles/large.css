@@ -49,4 +49,10 @@
         grid-row: 2;
 
     }
+
+    #courses-button{
+        display: flex;
+        flex-direction: row;
+    
+    }
 }

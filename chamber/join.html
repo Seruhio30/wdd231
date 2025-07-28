@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A chamber of commerce is a local organization of businesses that work together to 
+        strengthen the business interests of the group.">
+    <meta name="author" content="Sergio Herrera Rivera">
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Santa Ana Chamber Of Commerce">
+    <meta property="og:description" content="The Santa Ana Chamber of Commerce fosters 
+                                                collaboration between local businesses and communities to
+                                                drive sustainable economic development.">
+    <meta property="og:image" content="https://seruhio30.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://seruhio30.github.io/wdd231/chamber/directory.html">
+    <title>Santa Ana Chamber Of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap">
+    </noscript>
+
+
+    <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/large.css" media="print" onload="this.media='all'">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img class="logo-img" src="images/logo.webp" alt="logo of chamber of commerce of santa ana" width="50"
+                height="50">
+            <h2 class="logo-h1">Santa Ana Chamber Of Commerce</h2>
+        </div>
+        <!-- Botón de menú hamburguesa -->
+        <button id="hamburger" class="hamburger" aria-label="Toggle navigation"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <h2>Join</h2>
+        <section class="form-contact" id="contact">
+            <div class="form-layout">
+
+                <form action="../chamber/thankyou.html" class="contact-form" id="contact-form" method="get">
+                    <fieldset>
+                        <legend>Join Our Membership Program</legend>
+
+                        <div class="form-field">
+                            <label for="firstName">First Name</label>
+                            <input type="text" required name="firstName" id="firstName" title="Applicant's First Name"
+                                autocomplete="given-name">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" required name="lastName" id="lastName" title="Applicant's Last Name"
+                                autocomplete="family-name">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="orgTitle">Organization</label>
+                            <input type="text" name="orgTitle" id="orgTitle"
+                                title="Applicant's Title within Organization" autocomplete="organization-title"
+                                pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\- ]{7,}$">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" required name="email" id="email" title="Applicant's Email Address"
+                                autocomplete="email" placeholder="example@domain.com">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="mobile">Phone Number</label>
+                            <input type="tel" required name="mobile" id="mobile" title="Mobile Number"
+                                autocomplete="tel">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="organizationName">Organization Name</label>
+                            <input type="text" required name="organizationName" id="organizationName"
+                                title="Business or Organization Name" autocomplete="organization">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="membershipLevel">Membership Level</label>
+                            <select name="membershipLevel" id="membershipLevel" required
+                                title="Select Membership Level">
+                                <option value="">-- Select a level --</option>
+                                <option value="NP">NP Membership (Free for Nonprofits)</option>
+                                <option value="Bronze">Bronze Membership</option>
+                                <option value="Silver">Silver Membership</option>
+                                <option value="Gold">Gold Membership</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="orgDescription">Organization Description</label>
+                            <textarea id="orgDescription" name="orgDescription"
+                                title="Brief Description of the Organization" rows="4" cols="50"></textarea>
+                        </div>
+
+                        <input type="hidden" id="timestamp" name="timestamp">
+                        <input type="submit" value="Submit Membership">
+                    </fieldset>
+                </form>
+
+                <script>
+                    // Set timestamp when form loads
+                    document.getElementById("formTimestamp").value = new Date().toISOString();
+                </script>
+
+                <div class="card-container">
+                    <div class="member-card member-np">
+                        <h3>NP Membership</h3>
+                        <p>Designed for non-profit organizations. No fees required.</p>
+                        <a href="#" data-modal-target="modal-np">Learn More</a>
+                    </div>
+
+                    <div class="member-card member-bronze">
+                        <h3>Bronze Membership</h3>
+                        <p>Basic entry-level benefits for small businesses.</p>
+                        <a href="#" data-modal-target="modal-bronze">Learn More</a>
+                    </div>
+
+                    <div class="member-card member-silver">
+                        <h3>Silver Membership</h3>
+                        <p>Ideal for growing organizations with added advantages.</p>
+                        <a href="#" data-modal-target="modal-silver">Learn More</a>
+                    </div>
+
+                    <div class="member-card member-gold">
+                        <h3>Gold Membership</h3>
+                        <p>Full access to premium features and priority support.</p>
+                        <a href="#" data-modal-target="modal-gold">Learn More</a>
+                    </div>
+                </div>
+
+
+                <dialog id="modal-np" class="membership-modal">
+                    <button class="close-modal">✖</button>
+                    <h2>NP Membership Benefits</h2>
+                    <ul>
+                        <li>Free registration</li>
+                        <li>Access to basic events</li>
+                        <li>Community directory listing</li>
+                    </ul>
+                </dialog>
+
+                <dialog id="modal-bronze" class="membership-modal">
+                    <button class="close-modal">✖</button>
+                    <h2>Bronze Membership Benefits</h2>
+                    <ul>
+                        <li>Event discounts</li>
+                        <li>Training sessions</li>
+                        <li>Member spotlight feature</li>
+                    </ul>
+                </dialog>
+
+                <dialog id="modal-silver" class="membership-modal">
+                    <button class="close-modal">✖</button>
+                    <h2>Silver Membership Benefits</h2>
+                    <ul>
+                        <li>Priority event access</li>
+                        <li>Advertising packages</li>
+                        <li>Advanced training</li>
+                    </ul>
+                </dialog>
+
+                <dialog id="modal-gold" class="membership-modal">
+                    <button class="close-modal">✖</button>
+                    <h2>Gold Membership Benefits</h2>
+                    <ul>
+                        <li>All-access pass to events</li>
+                        <li>Homepage spotlight</li>
+                        <li>Dedicated account rep</li>
+                    </ul>
+                </dialog>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="info">
+            <p>Santa Ana Chamber Of Commerce</p>
+            <p>247 Main Street</p>
+            <p>Santa Ana, center</p>
+            <p>tana@ingo.com</p>
+            <p>50622828083</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/SergioHerreraRivera30
+                " target="_blank"><img src="../chamber/images/facebook.svg" alt="FaceBook" width="16" height="16"></a>
+            <a href="https://github.com/Seruhio30
+                " target="_blank"><img src="../chamber/images/github.svg" alt="GitHub" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/sergio-herrera-rivera" target="_blank">
+                <img src="../chamber/images/linkedin.svg" alt="Linked In" width="16" height="16"></a>
+
+        </div>
+        <div class="info">
+            <p>WDD 231</p>
+            <p>Sergio Herrera Rivera</p>
+            <p>&copy; <span id="currentyear"></span> Sergio Herrera Rivera, Costa Rica</p>
+            <p id="lastModified">Last Modified:</p>
+        </div>
+
+    </footer>
+
+    <script src="../chamber/scripts/navigation.js" defer></script>
+    <script src="../chamber/scripts/date.js" defer></script>
+    <script src="../chamber/scripts/join.js" defer></script>
+
+
+</body>
+
+</html>

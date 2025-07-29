@@ -1,0 +1,30 @@
+body {
+  background-color: #ECF0F1;
+  color: #2C3E50;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #2C3E50;
+  color: #ECF0F1;
+}
+
+header, footer {
+  background-color: #2C3E50;
+  color: #ECF0F1;
+  padding: 10px;
+  text-align: center;
+}
+
+.wireframe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    margin-top: 5px;
+}

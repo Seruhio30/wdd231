@@ -7,8 +7,6 @@
 }
 
 
-
-
 body {
   background-color: var(--background-color);
 }
@@ -367,7 +365,43 @@ dialog.membership-modal::backdrop {
   color: #333;
 }
 
+/************** DISCOVER *********************/
 
+#places div {
+
+  box-sizing: border-box;
+  margin: 1rem 0;
+   border: 1px solid var(--link-color);
+  background-color: var(--background-color);
+
+  display: grid;
+  grid-template-areas:
+  "name"
+  "photo"
+  "description"
+  "location" ;
+}
+
+#places div h2 {
+  margin: 8px;
+  grid-area: name;
+}
+
+#places div img {
+  display: block;
+  width: 100%;
+  height: auto;
+  grid-area: photo;
+}
+
+#places div p{
+ margin: 8px;
+ grid-area: description;
+}
+#places div address{
+   margin: 8px;
+   grid-area: location;
+}
 
 /************** Footer móvil *********************/
 footer {

@@ -26,7 +26,9 @@
 
     <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/medium.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles/large.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/visits.css" media="print" onload="this.media='all'">
 
 </head>
 
@@ -40,7 +42,7 @@
         <button id="hamburger" class="hamburger" aria-label="Toggle-navigation"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
@@ -49,42 +51,12 @@
         </nav>
     </header>
     <main>
-        <section class="main-one">
-            <div class="hero">
-                <img src="images/santa-anao_0.jpg" alt="santa ana picture" width="500" height="400">
-            </div>
-        </section>
-        <h1 id="home">Home</h1>
+        <section id="places"></section>
 
-        <section class="main-two">
-            <div class="events">
-                <h2>Events</h2>
-
-            </div>
-            <div class="current-Weather">
-                <h2>Current Weather</h2>
-                <img id="weather-icon" src="" alt="image from weather" width="16" height="16">
-                <div class="weather-details">
-                    <p id="current-temp"></p>
-                    <p id="description"></p>
-                    <p>High: <span id="high-temp"></span></p>
-                    <p>Low: <span id="low-temp"></span></p>
-                    <p>Humidity: <span id="humidity"></span></p>
-                    <p>Sunrise: <span id="sunrise"></span></p>
-                    <p>Sunset: <span id="sunset"></span></p>
-                </div>
-
-            </div>
-            <div class="weather-forecast">
-
-                <h2>Weather Forecast</h2>
-                <p id="today"></p>
-                <p id="day-two"></p>
-                <p id="day-three"></p>
-            </div>
-        </section>
-
-        <section id="spotlights"></section>
+        <div id="visit-card" class="hidden">
+            <button class="close-btn" aria-label="cerrar mesaje">X</button>
+            <p id="visit-message"></p>
+        </div>
 
     </main>
     <footer>
@@ -115,8 +87,9 @@
 
     <script src="../chamber/scripts/navigation.js" defer></script>
     <script src="../chamber/scripts/date.js" defer></script>
-    <script src="../chamber/scripts/weather.js" defer></script>
-    <script type="module" src="../chamber/scripts/spotlight.js"></script>
+    <script src="../chamber/scripts/discover.js" type="module"></script>
+    <script src="../chamber/scripts/visit.js" defer></script>
+  
 </body>
 
 </html>

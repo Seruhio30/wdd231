@@ -1,0 +1,12 @@
+@media (min-width: 36rem) {
+  #places div {
+    grid-template-areas:
+      "photo name"
+      "photo description"
+      "photo location";
+  }
+
+  #places div img {
+    width: 300px;
+  }
+}

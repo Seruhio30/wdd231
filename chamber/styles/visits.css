@@ -1,0 +1,29 @@
+.visit-card {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 250px;
+  font-family: sans-serif;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.visit-card .close-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  color: #666;
+}

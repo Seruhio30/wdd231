@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   card.classList.remove("hidden");
   localStorage.setItem("lastVisit", now);
 
-  // 🔒 Escuchar el click después que el DOM esté listo
+
   closeBtn.addEventListener("click", () => {
     card.classList.add("hidden");
   });

@@ -1,4 +1,4 @@
-import {places} from "/chamber/data/places.mjs";
+import { places } from "/chamber/data/places.mjs";
 console.log(places);
 
 
@@ -9,6 +9,8 @@ function displayItems(places) {
         const placeimg = document.createElement('img');
         placeimg.src = `images/${element.image_url}`;
         placeimg.alt = element.name;
+        placeimg.width = 300;
+        placeimg.height = 200;
         card.appendChild(placeimg);
 
         const title = document.createElement('h2');

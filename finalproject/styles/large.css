@@ -1,0 +1,166 @@
+@media (min-width: 1024px) {
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    .header-top {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /*NAVIGATION */
+
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+
+    .navigation ul {
+        display: flex;
+
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation li {
+
+        margin: 0 1rem;
+    }
+
+    .navigation a {
+        display: inline-block;
+        transition: transform 0.2s ease;
+    }
+
+    .navigation a:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s ease;
+    }
+
+    /* */
+
+    /************** MAIN SECTION 1*********************/
+    .one {
+        margin: 2.5rem;
+    }
+
+    .learn-by-doing {
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+    }
+
+    .btn-one {
+        display: block;
+        border: solid 1px black;
+        width: 8rem;
+        height: 1rem;
+        margin-bottom: 10px;
+    }
+
+    /************** MAIN SECTION GRID*********************/
+
+    .layout {
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 2.5rem;
+    }
+
+
+
+    .grid {
+        flex: 3;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /************** ERROR PAGE*********************/
+    .error-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /************** structure Page*********************/
+
+    .structure-page .structure-container {
+        max-width: 1100px;
+        padding: 2rem;
+    }
+
+    .structure-page .main {
+        padding: 2rem;
+    }
+
+    .structure-page section {
+        padding: 2rem 3rem;
+    }
+
+    .structure-page h2 {
+        font-size: 2rem;
+    }
+
+    .structure-page .layout-wrapper pre {
+        font-size: 1.05rem;
+        max-width: 700px;
+    }
+
+    .structure-page .structure-deco {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 30vw;
+        height: 100vh;
+        background: url('images/structure-deco.png') no-repeat center right;
+        background-size: cover;
+        opacity: 0.2;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    label,
+    textarea,
+    input {
+        grid-column: span 2;
+    }
+
+    button {
+        grid-column: span 2;
+        justify-self: start;
+    }
+}

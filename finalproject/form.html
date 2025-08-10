@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Herrera Rivera">
+    <meta name="description" content="The website offers a simple but dynamic learning resource for beginners in HTML, 
+    CSS, and JavaScript. It covers common errors, project structure guidance, and interactive code explanations using vanilla JS. 
+    It helps students build confidence through clarity.">
+    <title>Final Project</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-top">
+            <img src="images/favicon.png" alt="Logo" class="logo-img" width="50" height="50">
+            <h1 class="site-title">Practical Guide for Web Development Beginners</h1>
+            <button id="hamburger" class="hamburger" aria-label="Toggle navigation"></button>
+        </div>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="errors.html">Errors</a></li>
+                <li><a href="structure.html">Structure</a></li>
+                <li><a href="form.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <form action="form-action.html" method="GET" novalidate onsubmit="agregarTimestamp()">
+            <fieldset>
+                <legend>Tell us about your experience</legend>
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="challenge">What was the hardest part?</label>
+                <textarea id="challenge" name="challenge" rows="4" required></textarea>
+
+                <label for="advice">What advice would you give?</label>
+                <textarea id="advice" name="advice" rows="4"></textarea>
+
+                <button type="submit">Submit Feedback</button>
+                <input type="hidden" id="timestampDisplay" name="timestamp">
+
+            </fieldset>
+        </form>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Sergio Herrera Rivera</p>
+        <a href="media/final-video.mp4">Watch project demo</a>
+    </footer>
+    >
+    <script>
+        function agregarTimestamp() {
+            const now = new Date().toISOString();
+            document.getElementById("timestampDisplay").value = now;
+        }
+    </script>
+    <script src="scripts/main.js" type="module"></script>
+   
+   
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Herrera Rivera">
+    <meta name="description" content="The website offers a simple but dynamic learning resource for beginners in HTML, 
+    CSS, and JavaScript. It covers common errors, project structure guidance, and interactive code explanations using vanilla JS. 
+    It helps students build confidence through clarity.">
+    <title>Final Project</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+
+</head>
+
+<body class="structure-page">
+    <header class="site-header">
+        <div class="header-top">
+            <img src="images/favicon.png" alt="Logo" class="logo-img" width="50" height="50">
+            <h1 class="site-title">Practical Guide for Web Development Beginners</h1>
+            <button id="hamburger" class="hamburger" aria-label="Toggle navigation"></button>
+        </div>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="errors.html">Errors</a></li>
+                <li><a href="structure.html">Structure</a></li>
+                <li><a href="form.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="structure-container">
+        <main class="main">
+            <section>
+
+                <h2>Why Structure Matters</h2>
+                <p>A clear folder structure helps you stay organized, avoid broken links, and collaborate more
+                    effectively.
+                    It’s the foundation of maintainable code.</p>
+
+
+            </section>
+
+            <section class="layout-section">
+                <h2>Recommended Layout</h2>
+                <div class="layout-wrapper">
+                    <pre><code>
+    finalproject/
+    ├── index.html
+    ├── errors.html
+    ├── structure.html
+    ├── form.html
+    ├── styles/
+    │   ├── base.css
+    │   ├── medium.css
+    │   └── large.css
+    ├── scripts/
+    │   ├── main.js
+    │   └── errors.js
+    ├── data/
+    │   └── errores.json
+    ├── images/
+    │   └── favicon.png
+    ├── media/
+    │   └── final-video.mp4</code></pre>
+                </div>
+            </section>
+
+
+            <section>
+                <h2>Common Mistakes</h2>
+                <ul>
+                    <li>Using uppercase or spaces in file names</li>
+                    <li>Mixing HTML, CSS, and JS in one folder</li>
+                    <li>Not separating media, data, and scripts</li>
+                    <li>Forgetting to link files with correct relative paths</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Share Your Experience</h2>
+                <p>What was the hardest part about organizing your first web project?</p>
+                <p>Click below to share your experience through our feedback form.</p>
+                <form action="form.html">
+                    <button type="submit">Go to Feedback Form</button>
+                </form>
+
+
+
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Sergio Herrera Rivera</p>
+        <a href="media/final-video.mp4">Watch project demo</a>
+    </footer>
+    <script src="scripts/main.js" type="module"></script>
+    <div class="structure-deco"></div>
+
+
+</body>
+
+</html>

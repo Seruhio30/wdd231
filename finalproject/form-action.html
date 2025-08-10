@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Herrera Rivera">
+    <meta name="description" content="The website offers a simple but dynamic learning resource for beginners in HTML, 
+    CSS, and JavaScript. It covers common errors, project structure guidance, and interactive code explanations using vanilla JS. 
+    It helps students build confidence through clarity.">
+    <title>Final Project</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-top">
+            <img src="images/favicon.png" alt="Logo" class="logo-img" width="50" height="50">
+            <h1 class="site-title">Practical Guide for Web Development Beginners</h1>
+            <button id="hamburger" class="hamburger" aria-label="Toggle navigation"></button>
+        </div>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="errors.html">Errors</a></li>
+                <li><a href="structure.html">Structure</a></li>
+                <li><a href="form.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="thankyou-container">
+            <h1>🎉 Thank You for shared your experince and feedback</h1>
+            <p>Here's a summary of your submitted details:</p>
+
+            <div class="form-summary">
+                <p><strong>First Name:</strong> <span id="summary-name"></span></p>
+                <p><strong>Email:</strong> <span id="summary-email"></span></p>
+                <p><strong>Challenge:</strong> <span id="summary-challenge"></span></p>
+                <p><strong>Feedback:</strong> <span id="summary-advice"></span></p>
+                <p><strong>Date Submitted:</strong> <span id="summary-timestamp"></span></p>
+
+
+            </div>
+
+
+
+
+        </section>
+    </main>
+    <dialog id="confirmationModal" class="modal" aria-hidden="false" role="dialog" aria-labelledby="modalTitle"
+        aria-describedby="modalDesc">
+        <div class="modal-content">
+            <h2 id="modalTitle">Thank you for your input!</h2>
+            <p id="modalDesc">Your feedback has been received and recorded successfully.</p>
+            <button id="closeModalBtn">Cerrar</button>
+        </div>
+    </dialog>
+    <footer>
+        <p>&copy; 2025 Sergio Herrera Rivera</p>
+        <a href="media/final-video.mp4">Watch project demo</a>
+    </footer>
+
+    <script src="scripts/main.js" type="module"></script>
+
+
+</body>
+
+</html>

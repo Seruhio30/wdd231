@@ -1,0 +1,205 @@
+[
+  {
+    "id": "err-unclosed-tags",
+    "title": "Unclosed HTML Tags",
+    "category": "HTML",
+    "description": "Layout breaks unexpectedly due to missing closing tags.",
+    "solution": "Always close tags properly and use browser DevTools to inspect the DOM."
+  },
+  {
+    "id": "err-css-selector-typo",
+    "title": "Incorrect CSS Selector",
+    "category": "CSS",
+    "description": "Styles are not applied because the selector does not match the HTML element.",
+    "solution": "Double-check class or ID names, and inspect elements using DevTools."
+  },
+  {
+    "id": "err-missing-semicolon",
+    "title": "Missing Semicolon",
+    "category": "JavaScript",
+    "description": "Unexpected behavior or syntax error due to missing semicolon.",
+    "solution": "Use a code formatter or linter to catch syntax issues early."
+  },
+  {
+    "id": "err-cls-layout-shift",
+    "title": "Cumulative Layout Shift (CLS)",
+    "category": "Performance",
+    "description": "Elements shift unexpectedly during page load, impacting visual stability.",
+    "solution": "Reserve space for dynamic elements and define image dimensions explicitly."
+  },
+  {
+    "id": "err-aria-label-missing",
+    "title": "Missing ARIA Label",
+    "category": "Accessibility",
+    "description": "Interactive components lack accessible labels for screen readers.",
+    "solution": "Add descriptive `aria-label` or use semantic tags with associated text."
+  },
+  {
+    "id": "err-img-alt-missing",
+    "title": "Missing Alt Text for Images",
+    "category": "Accessibility",
+    "description": "Images are not described for visually impaired users.",
+    "solution": "Use the `alt` attribute for every image. If decorative, set it to `alt=\"\"`."
+  },
+  {
+    "id": "err-focus-outline-removed",
+    "title": "Removed Focus Outline",
+    "category": "Accessibility",
+    "description": "Keyboard users cannot visually see which element is focused.",
+    "solution": "Avoid removing `outline`, or provide a clear custom focus style."
+  },
+  {
+    "id": "err-fetch-cors-failure",
+    "title": "Fetch API CORS Error",
+    "category": "JavaScript",
+    "description": "Request to external API fails due to cross-origin restrictions.",
+    "solution": "Ensure the server allows CORS or test locally with a development proxy."
+  },
+  {
+    "id": "err-html-invalid-nesting",
+    "title": "Invalid HTML Nesting",
+    "category": "HTML",
+    "description": "Elements are improperly nested, causing layout issues or ignored styles.",
+    "solution": "Ensure elements are nested according to HTML specifications. Use inline elements like <span> inside <p>, not block-level elements like <div>."
+  },
+  {
+    "id": "err-css-grid-justify-content",
+    "title": "Misused justify-content in Grid",
+    "category": "CSS",
+    "description": "justify-content does not align grid items as expected.",
+    "solution": "Use justify-items to align items within grid cells. justify-content affects the entire grid container."
+  },
+  {
+    "id": "err-css-overuse-important",
+    "title": "Overuse of !important",
+    "category": "CSS",
+    "description": "Using !important excessively makes styles hard to override and maintain.",
+    "solution": "Increase selector specificity instead of relying on !important. Reserve it for exceptional cases."
+  },
+  {
+    "id": "err-performance-extra-1",
+    "title": "Unoptimized Images",
+    "category": "Performance",
+    "description": "Large image files slow down page load and increase bandwidth usage.",
+    "solution": "Compress images using tools like Squoosh or TinyPNG, and serve modern formats like WebP."
+  },
+  {
+    "id": "err-performance-extra-2",
+    "title": "Render-Blocking Resources",
+    "category": "Performance",
+    "description": "CSS or JavaScript files block the rendering of page content.",
+    "solution": "Use async/defer for scripts and minimize critical CSS."
+  },
+  {
+    "id": "err-performance-extra-3",
+    "title": "Too Many HTTP Requests",
+    "category": "Performance",
+    "description": "Excessive requests slow down page load and increase server load.",
+    "solution": "Combine files, use caching, and lazy-load non-critical assets."
+  },
+  {
+    "id": "err-performance-extra-4",
+    "title": "Lack of Lazy Loading",
+    "category": "Performance",
+    "description": "Images and iframes load immediately, even if not visible.",
+    "solution": "Use `loading=\"lazy\"` to defer offscreen content."
+  },
+  {
+    "id": "err-performance-extra-5",
+    "title": "No Text Compression",
+    "category": "Performance",
+    "description": "Uncompressed HTML, CSS, or JS increases transfer size.",
+    "solution": "Enable Gzip or Brotli compression on the server."
+  },
+  {
+    "id": "err-javascript-extra-1",
+    "title": "Undefined Variables",
+    "category": "JavaScript",
+    "description": "Using variables before they are declared causes runtime errors.",
+    "solution": "Declare variables with `let`, `const`, or `var` before use."
+  },
+  {
+    "id": "err-javascript-extra-2",
+    "title": "Incorrect Event Binding",
+    "category": "JavaScript",
+    "description": "Events don't trigger due to wrong selectors or timing.",
+    "solution": "Ensure DOM is loaded before binding, and verify selectors."
+  },
+  {
+    "id": "err-javascript-extra-3",
+    "title": "Improper Use of `this`",
+    "category": "JavaScript",
+    "description": "`this` behaves unexpectedly in different contexts.",
+    "solution": "Use arrow functions or bind `this` explicitly."
+  },
+  {
+    "id": "err-javascript-extra-4",
+    "title": "Not Handling Promises Properly",
+    "category": "JavaScript",
+    "description": "Missing `.catch()` or `try/catch` leads to unhandled errors.",
+    "solution": "Always handle promise rejections and use async/await responsibly."
+  },
+  {
+    "id": "err-accessibility-extra-1",
+    "title": "Insufficient Color Contrast",
+    "category": "Accessibility",
+    "description": "Text is hard to read due to low contrast with background.",
+    "solution": "Use tools like WebAIM Contrast Checker to meet WCAG standards."
+  },
+  {
+    "id": "err-accessibility-extra-2",
+    "title": "Missing Form Labels",
+    "category": "Accessibility",
+    "description": "Form fields lack labels, making them unusable for screen readers.",
+    "solution": "Use `<label>` elements or `aria-label` attributes."
+  },
+  {
+    "id": "err-accessibility-extra-3",
+    "title": "No Skip Navigation Link",
+    "category": "Accessibility",
+    "description": "Keyboard users must tab through all navigation before reaching content.",
+    "solution": "Add a 'skip to content' link at the top of the page."
+  },
+  {
+    "id": "err-html-extra-1",
+    "title": "Deprecated HTML Tags",
+    "category": "HTML",
+    "description": "Using outdated tags like `<font>` or `<center>` affects semantics and styling.",
+    "solution": "Replace deprecated tags with modern CSS and semantic HTML."
+  },
+  {
+    "id": "err-html-extra-2",
+    "title": "Missing DOCTYPE Declaration",
+    "category": "HTML",
+    "description": "Browsers may render the page in quirks mode without a DOCTYPE.",
+    "solution": "Start HTML documents with `<!DOCTYPE html>`."
+  },
+  {
+    "id": "err-html-extra-3",
+    "title": "Multiple `<main>` Elements",
+    "category": "HTML",
+    "description": "Having more than one `<main>` element breaks semantic structure.",
+    "solution": "Use only one `<main>` per page to define primary content."
+  },
+  {
+    "id": "err-html-extra-4",
+    "title": "Missing Language Attribute",
+    "category": "HTML",
+    "description": "Screen readers and search engines may misinterpret content language.",
+    "solution": "Add `lang` attribute to `<html>` tag, e.g., `<html lang=\"en\">`."
+  },
+  {
+    "id": "err-css-extra-1",
+    "title": "Conflicting Styles",
+    "category": "CSS",
+    "description": "Multiple rules target the same element, causing unpredictable results.",
+    "solution": "Organize styles and use clear naming conventions to avoid conflicts."
+  },
+  {
+    "id": "err-css-extra-2",
+    "title": "Incorrect Use of Units",
+    "category": "CSS",
+    "description": "Mixing units like `px`, `em`, and `%` inconsistently affects layout.",
+    "solution": "Use relative units consistently for scalable design."
+  }
+]

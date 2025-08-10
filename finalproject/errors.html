@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Herrera Rivera">
+    <meta name="description" content="The website offers a simple but dynamic learning resource for beginners in HTML, 
+    CSS, and JavaScript. It covers common errors, project structure guidance, and interactive code explanations using vanilla JS. 
+    It helps students build confidence through clarity.">
+    <title>Final Project</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-top">
+            <img src="images/favicon.png" alt="Logo" class="logo-img" width="50" height="50">
+            <h1 class="site-title">Practical Guide for Web Development Beginners</h1>
+            <button id="hamburger" class="hamburger" aria-label="Toggle navigation"></button>
+        </div>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="errors.html">Errors</a></li>
+                <li><a href="structure.html">Structure</a></li>
+                <li><a href="form.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Common Errors</h2>
+
+        <section id="html" class="encabesado">
+            <h3>HTML Errors</h3>
+            <div class="error-list"></div>
+        </section>
+
+        <section id="css" class="encabesado">
+            <h3>CSS Errors</h3>
+            <div class="error-list"></div>
+        </section>
+
+        <section id="javascript" class="encabesado">
+            <h3>JavaScript Errors</h3>
+            <div class="error-list"></div>
+        </section>
+
+        <section id="performance" class="encabesado">
+            <h3>Performance Errors</h3>
+            <div class="error-list"></div>
+        </section>
+
+        <section id="accessibility" class="encabesado">
+            <h3>Accessibility Errors</h3>
+            <div class="error-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sergio Herrera Rivera</p>
+        <a href="media/final-video.mp4">Watch project demo</a>
+    </footer>
+   
+    <script src="scripts/main.js" type="module"></script>
+</body>
+
+</html>

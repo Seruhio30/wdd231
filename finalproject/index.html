@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Herrera Rivera">
+    <meta name="description" content="The website offers a simple but dynamic learning resource for beginners in HTML, 
+    CSS, and JavaScript. It covers common errors, project structure guidance, and interactive code explanations using vanilla JS. 
+    It helps students build confidence through clarity.">
+    <title>Final Project</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.png" type="image/png" alt"logo"/>
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-top">
+            <img src="images/favicon.png" alt="Logo" class="logo-img" width="50" height="50">
+            <h1 class="site-title">Practical Guide for Web Development Beginners</h1>
+            <button id="hamburger" class="hamburger" aria-label="Toggle navigation"></button>
+        </div>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="errors.html">Errors</a></li>
+                <li><a href="structure.html">Structure</a></li>
+                <li><a href="form.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="one">
+
+            <div class="learn-by-doing">
+                <h2>Learm By Doing</h2>
+                <p>This guide is designed to help new developers learn the basics, avoid common mistakes, and build
+                    cleaner,
+                    more structured projects.
+                </p>
+                
+            </div>
+
+        </section>
+
+        <section class="layout">
+
+
+            <aside>
+                <h2>Filter by Topic</h2>
+                <ul>
+                    <li><a href="errors.html#html">HTML Errors</a></li>
+                    <li><a href="errors.html#css">CSS Errors</a></li>
+                    <li><a href="errors.html#javascript">JavaScript Errors</a></li>
+                    <li><a href="errors.html#performance">Performance Errors</a></li>
+                    <li><a href="errors.html#accessibility">Accessibility Errors</a></li>
+                    <li><a href="structure.html">Project Structure</a></li>
+                    <li><a href="form.html">Submit Feedback</a></li>
+                </ul>
+            </aside>
+
+
+            <section class="grid">
+                <div class="card">
+                    <h3>HTML Error Tips</h3>
+                    <p>Learn how to fix common HTML mistakes.</p>
+                    <a href="errors.html#html">Explore</a>
+                </div>
+                <div class="card">
+                    <h3>CSS Error Tips</h3>
+                    <p>Understand why styles may not apply.</p>
+                    <a href="errors.html#css">Explore</a>
+                </div>
+                <div class="card">
+                    <h3>JavaScript Error Tips</h3>
+                    <p>Debug your scripts with clarity.</p>
+                    <a href="errors.html#javascript">Explore</a>
+                </div>
+                <div class="card">
+                    <h3>Organize Your Files</h3>
+                    <p>Structure your project like a pro.</p>
+                    <a href="structure.html">View Guide</a>
+                </div>
+                <div class="card">
+                    <h3>Video Tutorial</h3>
+                    <p>Watch a demo of the site in action.</p>
+                    <a href="media/final-video.mp4">Watch</a>
+                </div>
+                <div class="card">
+                    <h3>Feedback Form</h3>
+                    <p>Tell us what frustrates you most.</p>
+                    <a href="form.html">Submit</a>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sergio Herrera Rivera</p>
+        <a href="media/final-video.mp4">Watch project demo</a>
+    </footer>
+    <script src="scripts/main.js" type="module"></script>
+</body>
+
+</html>

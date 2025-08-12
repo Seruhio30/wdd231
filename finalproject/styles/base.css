@@ -4,25 +4,15 @@
   --color-text: #2C3E50;
   --color-card: #eaf3fa;
   --color-header-footer: #c4dcf4;
+  --color-footer-bg: #c4dcf4;
 }
 
 html, body {
   height: 100%;
   margin: 0;
-  }
-
-  main {
-  flex: 1;
-  }
-
-body {
-   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
   padding: 0;
 }
 
@@ -35,11 +25,10 @@ a {
   text-decoration: none;
 }
 
-
-
+/* Header */
 .site-header {
   padding: 1rem;
-    background-color: var(--color-header-footer) ;
+  background-color: var(--color-header-footer);
 }
 
 .header-top {
@@ -48,10 +37,7 @@ a {
   align-items: center;
 }
 
-
-
-/**************Hamburguer*********************/
-
+/* Navigation */
 .hamburger {
   background: none;
   border: none;
@@ -68,13 +54,10 @@ a {
   content: "\00D7";
 }
 
-/************** Navigation*********************/
-
 .navigation {
   display: none;
   flex-direction: column;
   margin-top: 1rem;
-
 }
 
 .navigation.show {
@@ -90,52 +73,45 @@ a {
   margin: 0.5rem 0;
 }
 
-  .navigation a {
+.navigation a {
   display: inline-block;
   transition: transform 0.2s ease;
 }
 
-.navigation a:hover{
-    transform: scale(1.05);
-    transition: transform 0.2s ease;
-    background-color: var(--color-card);
-    color: black;
-    font-weight: 500;
+.navigation a:hover {
+  transform: scale(1.05);
+  background-color: var(--color-card);
+  color: black;
+  font-weight: 500;
 }
 
-/************** MAIN SECTION 1*********************/
-.site-title {
+/* Main Section */
+.site-title,
+.encabesado h3 {
   font-size: 1.5rem;
   text-align: center;
   margin-left: 0.5rem;
- 
 }
 
-.one{
+.one {
   margin: 1rem;
 }
 
- .learn-by-doing{
+.learn-by-doing {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  background-color: var(--color-card);
   border: solid 1px black;
   border-radius: 8px;
-  background-color: var(--color-card);
- 
 }
 
-.learn-by-doing p{
+.learn-by-doing p {
   margin: 5px;
 }
 
-.btn-one{
-  display: none;
-}
-
-/************** MAIN SECTION GRID*********************/
-
+/* Layout */
 .layout {
   display: flex;
   flex-direction: column;
@@ -143,26 +119,44 @@ a {
   margin: 1rem;
 }
 
-aside{
+/* Responsive Aside */
+aside {
   display: none;
 }
 
+@media (min-width: 1024px) {
+  aside {
+    display: block;
+  }
+}
+
+/* Grid */
 .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
 
-.card {
-
+/* Card */
+.card,
+.error-card,
+.modal-content,
+.structure-page section,
+.lighthouse-results {
   background-color: var(--color-card);
-  border: 1px solid var(--color-primary);
-  padding: 1rem;
   border-radius: 8px;
+  padding: 1rem;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.card a{
+.card {
+  border: 1px solid var(--color-primary);
+}
+
+.card a,
+.navigation a,
+.structure-page button {
   border: solid 1px black;
   border-radius: 5px;
   padding: 3px;
@@ -170,60 +164,36 @@ aside{
   transition: transform 0.2s ease;
 }
 
-.card a:hover {
+.card a:hover,
+.structure-page button:hover {
   transform: scale(1.05);
-  transition: transform 0.2s ease;
-}
-/************** ERROR PAGE*********************/
-
-.encabesado h3{
-  justify-content: center;
-  text-align: center;
 }
 
-.error-list{
+/* Error Page */
+.error-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
+
 .error-card {
-    background-color: var(--color-card);
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
 }
 
 .error-card h4 {
-    margin-top: 0;
-    color: #d32f2f;
+  margin-top: 0;
+  color: #d32f2f;
 }
 
 .error-card p {
-    margin: 0.5rem 0;
+  margin: 0.5rem 0;
 }
 
-
-/************** structure Page*********************/
-
-
+/* Structure Page */
 .structure-page .structure-container {
   padding: 1rem;
   box-sizing: border-box;
-}
-
-.structure-page .main {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.structure-page section {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .structure-page h2 {
@@ -249,13 +219,10 @@ aside{
   margin-right: 0.5rem;
 }
 
-
 .structure-page button {
   background-color: #0a9396;
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -286,33 +253,16 @@ aside{
   overflow-x: auto;
 }
 
-.lighthouse-results {
-  padding: 1.5rem;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-}
-
-.lighthouse-results {
-  padding: 1.5rem;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-  text-align: center;
-}
-
-.lighthouse-results h2,
-.lighthouse-results p {
-  margin-bottom: 1rem;
-}
-
+/* Lighthouse */
 .lighthouse-results h2 {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .lighthouse-results p {
   font-size: 1rem;
   color: #555;
+  margin-bottom: 1rem;
 }
 
 .lighthouse-results figure {
@@ -334,7 +284,7 @@ aside{
   color: #333;
 }
 
-/************** form Page*********************/
+/* Form */
 form {
   background-color: var(--color-bg);
   padding: 1rem;
@@ -375,6 +325,7 @@ button:hover {
   background-color: #006699;
 }
 
+/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -389,16 +340,9 @@ button:hover {
   display: flex;
 }
 
-.modal-content {
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
-  max-width: 400px;
-  text-align: center;
-}
-
+/* Footer */
 footer {
-  min-height: 120px; 
+  min-height: 120px;
   padding: 1rem;
   background-color: var(--color-footer-bg);
   flex-shrink: 0;

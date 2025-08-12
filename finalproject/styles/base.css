@@ -349,7 +349,9 @@ button:hover {
   text-align: center;
 }
 
-footer{
-  min-height: 120px; 
-  background-color: var(--color-header-footer);
+footer {
+  min-height: 120px; /* ajusta según el contenido real */
+  padding: 1rem;
+  background-color: var(--color-footer-bg);
+  flex-shrink: 0;
 }

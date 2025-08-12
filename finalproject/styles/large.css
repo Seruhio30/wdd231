@@ -1,25 +1,4 @@
 @media (min-width: 1024px) {
-
-  /* Reset height and margin */
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-  }
-
-  /* Body flex layout for full height */
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  /* Main flex growth */
-  main {
-    flex: 1;
-  }
-
-  /* Header layout: flex horizontal, spaced */
   .site-header {
     display: flex;
     justify-content: space-between;
@@ -28,19 +7,16 @@
     flex-wrap: wrap;
   }
 
-  /* Header top with gap */
   .header-top {
     display: flex;
     align-items: center;
     gap: 1rem;
   }
 
-  /* Hide hamburger menu on large screens */
   .hamburger {
     display: none;
   }
 
-  /* Navigation bar horizontal and visible */
   .navigation {
     display: flex !important;
     flex-direction: row;
@@ -48,7 +24,6 @@
     margin-top: 0;
   }
 
-  /* Navigation list styling */
   .navigation ul {
     display: flex;
     gap: 1rem;
@@ -56,89 +31,47 @@
     margin: 0;
   }
 
-  /* Navigation items spacing */
   .navigation li {
     margin: 0 1rem;
   }
 
-  /* Site title bigger */
   .site-title {
     font-size: 2.5rem;
   }
 
-  /* Margin for section "one" */
-  .one {
-    margin: 2.5rem;
-  }
-
-  /* Learn-by-doing section alignment */
-  .learn-by-doing {
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  /* Button style */
-  .btn-one {
-    display: block;
-    border: solid 1px black;
-    width: 8rem;
-    height: 1rem;
-    margin-bottom: 10px;
-  }
-
-  /* Layout section flex row with margin */
   .layout {
     flex-direction: row;
     align-items: flex-start;
     margin: 2.5rem;
   }
 
-  /* Grid layout for content */
-  .grid {
-    flex: 3;
-    display: grid; /* Asegura display grid */
+  .grid, .error-list {
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
   }
 
-  /* Error list grid with 3 columns */
-  .error-list {
-    display: grid; /* Asegura display grid */
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-  }
-
-  /* Structure page container max width and padding */
   .structure-page .structure-container {
     max-width: 1100px;
     padding: 2rem;
     margin: 0 auto;
   }
 
-  /* Structure main section padding */
   .structure-page .main {
     padding: 2rem;
   }
 
-  /* Structure sections with extra padding */
   .structure-page section {
     padding: 2rem 3rem;
   }
 
-  /* Structure page heading font size */
   .structure-page h2 {
     font-size: 2rem;
   }
 
-  /* Preformatted layout wrapper style */
   .structure-page .layout-wrapper pre {
     font-size: 1.05rem;
     max-width: 700px;
-    overflow-x: auto;
   }
 
-  /* Decorative image fixed position with low opacity */
   .structure-page .structure-deco {
     position: fixed;
     top: 0;
@@ -152,47 +85,35 @@
     pointer-events: none;
   }
 
-  /* Lighthouse results container */
   .lighthouse-results {
     padding: 2rem;
     max-width: 1000px;
     margin: 0 auto;
-  }
-
-  /* Lighthouse results headings and paragraph alignment */
-  .lighthouse-results h2,
-  .lighthouse-results p {
     text-align: center;
-    margin-bottom: 1.5rem;
   }
 
-  /* Lighthouse figures grid responsive */
   .lighthouse-results-figures {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
   }
 
-  /* Lighthouse figure margin reset */
   .lighthouse-results figure {
     margin: 0;
   }
 
-  /* Form layout: two columns */
   form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
 
-  /* Form labels, textarea and input span 2 columns */
   label,
   textarea,
   input {
     grid-column: span 2;
   }
 
-  /* Submit button spans two columns and left aligned */
   button {
     grid-column: span 2;
     justify-self: start;

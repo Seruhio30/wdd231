@@ -1,6 +1,6 @@
 /************** ERROR PAGE*********************/
 @media (min-width: 700px) {
-  aside {
+    aside {
         display: block;
         flex: 1;
         max-width: 250px;
@@ -14,7 +14,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-    
+
         text-align: left;
         gap: 1rem;
         padding: 0;
@@ -31,61 +31,58 @@
         transition: transform 0.2s ease;
     }
 
-    aside a:hover{
+    aside a:hover {
         transform: scale(1.20);
         transition: transform 0.2s ease;
     }
 
     /************** ERROR PAGE*********************/
-    .grid{
-        grid-template-columns: repeat(2,1fr);
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .error-list{
-        grid-template-columns: repeat(2,1fr);
+    .error-list {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /************** structure Page*********************/
-    
-   .structure-page .structure-container {
-    max-width: 960px;
-    margin: 0 auto;
-  }
 
-  .structure-page h2 {
-    font-size: 1.8rem;
-  }
+    .structure-page .structure-container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
 
-  .structure-page .layout-wrapper pre {
-    font-size: 1rem;
-    max-width: 600px;
-  }
-   .lighthouse-results {
-    padding: 1.75rem;
-    max-width: 700px;
-    margin: 0 auto;
-  }
+    .structure-page h2 {
+        font-size: 1.8rem;
+    }
 
-  .lighthouse-results h2 {
-    font-size: 1.6rem;
-  }
+    .structure-page .layout-wrapper pre {
+        font-size: 1rem;
+        max-width: 600px;
+    }
 
-  .lighthouse-results p {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-  }
+    .lighthouse-results {
+        padding: 1.75rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
 
-  .lighthouse-results figure {
-    margin-bottom: 2rem;
-  }
+    .lighthouse-results h2,
+    .lighthouse-results p,
+    .lighthouse-results img {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 
-  .lighthouse-results img {
-    max-width: 100%;
-    height: auto;
-  }
 
-  form {
-  padding: 2rem;
-}
+    .lighthouse-results figure {
+        margin-bottom: 2rem;
+    }
+
+
+
+    form {
+        padding: 2rem;
+    }
 
 }

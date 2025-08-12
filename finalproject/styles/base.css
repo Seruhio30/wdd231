@@ -350,5 +350,6 @@ button:hover {
 }
 
 footer{
+  min-height: 120px; 
   background-color: var(--color-header-footer);
 }

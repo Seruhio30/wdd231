@@ -1,88 +1,72 @@
-/************** ERROR PAGE*********************/
 @media (min-width: 700px) {
-    aside {
-        display: block;
-        flex: 1;
-        max-width: 250px;
-        background-color: var(--color-card);
-        border: 1px solid var(--color-primary);
-        padding: 1rem;
-        border-radius: 8px;
-    }
+  aside {
+    display: block;
+    flex: 1;
+    max-width: 250px;
+    background-color: var(--color-card);
+    border: 1px solid var(--color-primary);
+    padding: 1rem;
+    border-radius: 8px;
+  }
 
-    aside ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+  aside ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    text-align: left;
+  }
 
-        text-align: left;
-        gap: 1rem;
-        padding: 0;
-        margin: 0;
-    }
+  aside a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
 
-    aside li {
-        list-style: none;
+  aside a:hover {
+    transform: scale(1.2);
+  }
 
-    }
+  /* Usa solo una clase para grid si es posible */
+  .grid,
+  .error-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    aside a {
-        display: inline-block;
-        transition: transform 0.2s ease;
-    }
+  .structure-page .structure-container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 
-    aside a:hover {
-        transform: scale(1.20);
-        transition: transform 0.2s ease;
-    }
+  .structure-page h2 {
+    font-size: 1.8rem;
+  }
 
-    /************** ERROR PAGE*********************/
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .structure-page .layout-wrapper pre {
+    font-size: 1rem;
+    max-width: 600px;
+  }
 
-    .error-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .lighthouse-results {
+    padding: 1.75rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-    /************** structure Page*********************/
+  .lighthouse-results h2,
+  .lighthouse-results p,
+  .lighthouse-results img {
+    margin-bottom: 1rem;
+  }
 
-    .structure-page .structure-container {
-        max-width: 960px;
-        margin: 0 auto;
-    }
+  .lighthouse-results figure {
+    margin-bottom: 2rem;
+  }
 
-    .structure-page h2 {
-        font-size: 1.8rem;
-    }
-
-    .structure-page .layout-wrapper pre {
-        font-size: 1rem;
-        max-width: 600px;
-    }
-
-    .lighthouse-results {
-        padding: 1.75rem;
-        max-width: 700px;
-        margin: 0 auto;
-    }
-
-    .lighthouse-results h2,
-    .lighthouse-results p,
-    .lighthouse-results img {
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-
-
-    .lighthouse-results figure {
-        margin-bottom: 2rem;
-    }
-
-
-
-    form {
-        padding: 2rem;
-    }
-
+  form {
+    padding: 2rem;
+  }
 }

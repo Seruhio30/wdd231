@@ -286,6 +286,48 @@ aside{
   overflow-x: auto;
 }
 
+.lighthouse-results {
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.lighthouse-results h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.lighthouse-results p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.lighthouse-results figure {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.lighthouse-results img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lighthouse-results figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+}
+
+
+
 /************** form Page*********************/
 form {
   background-color: var(--color-bg);

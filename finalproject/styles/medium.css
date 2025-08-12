@@ -47,8 +47,7 @@
 
     /************** structure Page*********************/
     
-   .structure-page,
-    .structure-container {
+   .structure-page .structure-container {
     max-width: 960px;
     margin: 0 auto;
   }
@@ -57,10 +56,32 @@
     font-size: 1.8rem;
   }
 
-  .structure-page,
-   .layout-wrapper pre {
+  .structure-page .layout-wrapper pre {
     font-size: 1rem;
     max-width: 600px;
+  }
+   .lighthouse-results {
+    padding: 1.75rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .lighthouse-results h2 {
+    font-size: 1.6rem;
+  }
+
+  .lighthouse-results p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .lighthouse-results figure {
+    margin-bottom: 2rem;
+  }
+
+  .lighthouse-results img {
+    max-width: 100%;
+    height: auto;
   }
 
   form {

@@ -350,7 +350,7 @@ button:hover {
 }
 
 footer {
-  min-height: 120px; /* ajusta según el contenido real */
+  min-height: 120px; 
   padding: 1rem;
   background-color: var(--color-footer-bg);
   flex-shrink: 0;

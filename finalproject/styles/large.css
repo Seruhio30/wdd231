@@ -1,19 +1,4 @@
 @media (min-width: 1024px) {
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  main {
-    flex: 1;
-  }
-
   .site-header {
     display: flex;
     justify-content: space-between;
@@ -23,8 +8,6 @@
   }
 
   .header-top {
-    display: flex;
-    align-items: center;
     gap: 1rem;
   }
 
@@ -40,10 +23,8 @@
   }
 
   .navigation ul {
-    display: flex;
+    flex-direction: row;
     gap: 1rem;
-    padding: 0;
-    margin: 0;
   }
 
   .navigation li {
@@ -125,12 +106,10 @@
   .lighthouse-results {
     padding: 2rem;
     max-width: 1000px;
-    margin: 0 auto;
   }
 
   .lighthouse-results h2,
   .lighthouse-results p {
-    text-align: center;
     margin-bottom: 1.5rem;
   }
 
@@ -154,10 +133,5 @@
   textarea,
   input {
     grid-column: span 2;
-  }
-
-  button {
-    grid-column: span 2;
-    justify-self: start;
   }
 }

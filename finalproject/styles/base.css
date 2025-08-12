@@ -9,14 +9,10 @@
 html, body {
   height: 100%;
   margin: 0;
-  }
-
-  main {
-  flex: 1;
-  }
+}
 
 body {
-   display: flex;
+  display: flex;
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--color-bg);
@@ -26,6 +22,10 @@ body {
   padding: 0;
 }
 
+main {
+  flex: 1;
+}
+
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
@@ -33,13 +33,19 @@ h1, h2, h3 {
 a {
   color: var(--color-primary);
   text-decoration: none;
+  transition: transform 0.2s ease;
 }
 
-
+a:hover {
+  transform: scale(1.05);
+  background-color: var(--color-card);
+  color: black;
+  font-weight: 500;
+}
 
 .site-header {
   padding: 1rem;
-    background-color: var(--color-header-footer) ;
+  background-color: var(--color-header-footer);
 }
 
 .header-top {
@@ -48,9 +54,7 @@ a {
   align-items: center;
 }
 
-
-
-/**************Hamburguer*********************/
+/* Hamburguer */
 
 .hamburger {
   background: none;
@@ -68,13 +72,12 @@ a {
   content: "\00D7";
 }
 
-/************** Navigation*********************/
+/* Navigation */
 
 .navigation {
   display: none;
   flex-direction: column;
   margin-top: 1rem;
-
 }
 
 .navigation.show {
@@ -84,60 +87,43 @@ a {
 .navigation ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .navigation li {
   margin: 0.5rem 0;
 }
 
-  .navigation a {
+.navigation a {
   display: inline-block;
-  transition: transform 0.2s ease;
 }
 
-.navigation a:hover{
-    transform: scale(1.05);
-    transition: transform 0.2s ease;
-    background-color: var(--color-card);
-    color: black;
-    font-weight: 500;
-}
+/* Main Section 1 */
 
-/************** MAIN SECTION 1*********************/
 .site-title, 
 .encabesado h3 {
   font-size: 1.5rem;
-  text-align: center;
   margin-left: 0.5rem;
-  justify-content: center;
   text-align: center;
-{
-  justify-content: center;
-  text-align: center;
-}
- 
 }
 
-.one{
+.one {
   margin: 1rem;
 }
 
- .learn-by-doing{
+.learn-by-doing {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
-  flex-direction: column;
   border: solid 1px black;
   border-radius: 8px;
   background-color: var(--color-card);
- 
+  gap: 5px;
+  padding: 5px;
 }
 
-.learn-by-doing p{
-  margin: 5px;
-}
-
-/************** MAIN SECTION GRID*********************/
+/* Main Section Grid */
 
 .layout {
   display: flex;
@@ -146,7 +132,7 @@ a {
   margin: 1rem;
 }
 
-aside{
+aside {
   display: none;
 }
 
@@ -157,7 +143,6 @@ aside{
 }
 
 .card {
-
   background-color: var(--color-card);
   border: 1px solid var(--color-primary);
   padding: 1rem;
@@ -165,7 +150,7 @@ aside{
   text-align: center;
 }
 
-.card a{
+.card a {
   border: solid 1px black;
   border-radius: 5px;
   padding: 3px;
@@ -173,40 +158,33 @@ aside{
   transition: transform 0.2s ease;
 }
 
-.card a:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s ease;
-}
-/************** ERROR PAGE*********************/
+/* Error Page */
 
-
-
-.error-list{
+.error-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
+
 .error-card {
-    background-color: var(--color-card);
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: var(--color-card);
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .error-card h4 {
-    margin-top: 0;
-    color: #d32f2f;
+  margin-top: 0;
+  color: #d32f2f;
 }
 
 .error-card p {
-    margin: 0.5rem 0;
+  margin: 0.5rem 0;
 }
 
-
-/************** structure Page*********************/
-
+/* Structure Page */
 
 .structure-page .structure-container {
   padding: 1rem;
@@ -249,7 +227,6 @@ aside{
   margin-right: 0.5rem;
 }
 
-
 .structure-page button {
   background-color: #0a9396;
   color: white;
@@ -286,12 +263,7 @@ aside{
   overflow-x: auto;
 }
 
-.lighthouse-results {
-  padding: 1.5rem;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-}
+/* Lighthouse Results */
 
 .lighthouse-results {
   padding: 1.5rem;
@@ -334,7 +306,8 @@ aside{
   color: #333;
 }
 
-/************** form Page*********************/
+/* Form Page */
+
 form {
   background-color: var(--color-bg);
   padding: 1rem;
@@ -369,11 +342,14 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #006699;
 }
+
+/* Modal */
 
 .modal {
   display: none;
@@ -397,9 +373,11 @@ button:hover {
   text-align: center;
 }
 
+/* Footer */
+
 footer {
   min-height: 120px; 
   padding: 1rem;
-  background-color: var(--color-footer-bg);
+  background-color: var(--color-header-footer);
   flex-shrink: 0;
 }

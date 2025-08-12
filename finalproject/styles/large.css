@@ -30,6 +30,8 @@
         gap: 1rem;
     }
 
+
+
     .hamburger {
         display: none;
     }
@@ -70,6 +72,12 @@
     /* */
 
     /************** MAIN SECTION 1*********************/
+
+    .site-title {
+        font-size: 2.5rem;
+        /* para pantallas más grandes */
+    }
+
     .one {
         margin: 2.5rem;
     }

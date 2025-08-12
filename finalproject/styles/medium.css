@@ -1,84 +1,88 @@
+/************** ERROR PAGE*********************/
 @media (min-width: 700px) {
+    aside {
+        display: block;
+        flex: 1;
+        max-width: 250px;
+        background-color: var(--color-card);
+        border: 1px solid var(--color-primary);
+        padding: 1rem;
+        border-radius: 8px;
+    }
 
-  aside {
-    display: block;
-    flex: 1;
-    max-width: 250px;
-    composes: box border-primary;
-    padding: 1rem;
-  }
+    aside ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-  aside ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    gap: 1rem;
-    padding: 0;
-    margin: 0;
-  }
+        text-align: left;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+    }
 
-  aside li {
-    list-style: none;
-  }
+    aside li {
+        list-style: none;
 
-  aside a {
-    display: inline-block;
-    transition: transform 0.2s ease;
-  }
+    }
 
-  aside a:hover {
-    transform: scale(1.20);
-  }
+    aside a {
+        display: inline-block;
+        transition: transform 0.2s ease;
+    }
 
-  /* Grid y Error List */
+    aside a:hover {
+        transform: scale(1.20);
+        transition: transform 0.2s ease;
+    }
 
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    /************** ERROR PAGE*********************/
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-  .error-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .error-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-  /* Structure Page */
+    /************** structure Page*********************/
 
-  .structure-page .structure-container {
-    max-width: 960px;
-    margin: 0 auto;
-  }
+    .structure-page .structure-container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
 
-  .structure-page h2 {
-    font-size: 1.8rem;
-  }
+    .structure-page h2 {
+        font-size: 1.8rem;
+    }
 
-  .structure-page .layout-wrapper pre {
-    font-size: 1rem;
-    max-width: 600px;
-  }
+    .structure-page .layout-wrapper pre {
+        font-size: 1rem;
+        max-width: 600px;
+    }
 
-  /* Lighthouse Results */
+    .lighthouse-results {
+        padding: 1.75rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
 
-  .lighthouse-results {
-    padding: 1.75rem;
-    max-width: 700px;
-    margin: 0 auto;
-  }
+    .lighthouse-results h2,
+    .lighthouse-results p,
+    .lighthouse-results img {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 
-  .lighthouse-results h2,
-  .lighthouse-results p,
-  .lighthouse-results img {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
 
-  .lighthouse-results figure {
-    margin-bottom: 2rem;
-  }
+    .lighthouse-results figure {
+        margin-bottom: 2rem;
+    }
 
-  /* Form */
 
-  form {
-    padding: 2rem;
-  }
+
+    form {
+        padding: 2rem;
+    }
+
 }

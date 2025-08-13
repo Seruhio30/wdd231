@@ -1,31 +1,22 @@
-export function form_handler(){
-  document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("feedback-form");
+export function form_handler() {
+  window.addEventListener("load", () => {
+    const form = document.getElementById("feedback-form");
+    const submitBtn = document.getElementById("submitBtn");
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
+    if (!form || !submitBtn) {
+      
+      return;
+    }
 
-    const formData = new FormData(form);
-    const params = new URLSearchParams(formData);
+    submitBtn.addEventListener("click", () => {
+      const timestamp = new Date().toISOString();
+      const timestampInput = form.querySelector("input[name='timestamp']");
+      if (timestampInput) {
+        timestampInput.value = timestamp;
+      }
 
-    // se agrega timestamp dinámico
-    const timestamp = new Date().toISOString();
-    params.append("timestamp", timestamp);
-
-    // Guardar en localStorage
-    const dataObject = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      challenge: formData.get("challenge"),
-      advice: formData.get("advice"),
-      timestamp: timestamp
-    };
-
-    localStorage.setItem("formData", JSON.stringify(dataObject));
-
-    // Redirige con los datos en la URL
-    window.location.href = `form-action.html?${params.toString()}`;
+      form.submit();
+    });
   });
-});
-
 }
+

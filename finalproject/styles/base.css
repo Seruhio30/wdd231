@@ -26,9 +26,12 @@ h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Texto y enlaces comunes */
+
 a, .navigation a {
   color: var(--color-primary);
   text-decoration: none;
@@ -225,10 +228,14 @@ aside a:hover {
 
 /* Formulario */
 form {
+
   background-color: var(--color-bg);
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 label {
@@ -243,6 +250,8 @@ input, textarea {
   margin-top: 0.25rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 button {

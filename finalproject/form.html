@@ -32,7 +32,7 @@
     <header class="site-header">
         <div class="header-top">
             <img src="images/favicon.png" alt="Logo" width="50" height="50" loading="lazy">
-            
+
             <button id="hamburger" class="hamburger" aria-label="Toggle navigation"></button>
         </div>
 
@@ -47,9 +47,9 @@
     </header>
 
 
-    <main>
+    <main class="main">
         <h1 class="site-title">Practical Guide for Web Development Beginners</h1>
-        <form action="form-action.html" method="GET" novalidate onsubmit="agregarTimestamp()">
+        <form id="feedback-form" action="form-action.html" method="GET" novalidate>
             <fieldset>
                 <legend>Tell us about your experience</legend>
 
@@ -64,8 +64,8 @@
 
                 <label for="advice">What advice would you give?</label>
                 <textarea id="advice" name="advice" rows="4"></textarea>
+                <button type="button" id="submitBtn">Submit Feedback</button>
 
-                <button type="submit">Submit Feedback</button>
                 <input type="hidden" id="timestampDisplay" name="timestamp">
 
             </fieldset>
@@ -77,13 +77,7 @@
         <p>&copy; 2025 Sergio Herrera Rivera</p>
         <a href="media/final-video.mp4">Watch project demo</a>
     </footer>
-    >
-    <script>
-        function agregarTimestamp() {
-            const now = new Date().toISOString();
-            document.getElementById("timestampDisplay").value = now;
-        }
-    </script>
+
     <script src="scripts/main.js" type="module"></script>
 
 

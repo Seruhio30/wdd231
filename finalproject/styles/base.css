@@ -168,10 +168,11 @@ aside a:hover {
   transform: scale(1.2);
 }
 
-/* Structure Page y Lighthouse Results juntos */
+/* Structure Page y Lighthouse Results  */
 
 .structure-page .structure-container,
 .lighthouse-results {
+  width: 100%;
   margin: 0 auto;
   border-radius: 8px;
   box-sizing: border-box;
@@ -183,15 +184,16 @@ aside a:hover {
 }
 
 .structure-page .structure-container {
+  
   padding: 1rem;
-  background-color: white;
+  background-color: var(--color-card);
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .structure-page section {
   padding: 2rem;
   border-radius: 12px;
-  background-color: white;
+  
 }
 
 .structure-page h2,
@@ -207,6 +209,7 @@ aside a:hover {
   font-size: 1rem;
   color: #444;
   margin-bottom: 0.75rem;
+ 
 }
 
 .lighthouse-results figure {

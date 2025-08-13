@@ -9,10 +9,14 @@
   .structure-page .structure-container {
     max-width: 960px;
   }
+
+  .structure-page ul{
+    list-style: none;
+  }
   .structure-page h2 {
     font-size: 1.8rem;
   }
-  .structure-page .layout-wrapper pre {
+  .structure-page .layout-wrapper  {
     font-size: 1rem;
     max-width: 600px;
   }

@@ -71,6 +71,7 @@
   .structure-page .structure-container {
     max-width: 1100px;
     padding: 2rem;
+
   }
 
   .structure-page .main {
@@ -85,7 +86,7 @@
     font-size: 2rem;
   }
 
-  .structure-page .layout-wrapper pre {
+  .structure-page .layout-wrapper {
     font-size: 1.05rem;
     max-width: 700px;
   }
